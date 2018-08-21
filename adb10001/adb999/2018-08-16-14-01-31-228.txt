@@ -1,0 +1,452 @@
+<6>Booting Linux on physical CPU 0x0
+<6>Initializing cgroup subsys cpu
+<6>Initializing cgroup subsys cpuacct
+<5>Linux version 3.18.24_hi3798mv2x (smartbox@smart) (gcc version 4.9.4 (gcc-linaro-4.9-2017.01 + glibc-2.27 Build by czyong Thu Mar 29 22:12:18 CST 2018) ) #10 SMP Thu Aug 2 21:48:40 AKDT 2018
+<6>CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+<6>CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<5>initmrd: found no initmrd.
+<6>Machine model: Hisilicon
+<6>cma: Reserved 48 MiB at 0x3b800000
+<6>cma: Reserved 4 MiB at 0x3fc00000
+<6>Memory policy: Data cache writealloc
+<7>-------------Fixed IO Mapping----------
+<7>Virt,            Phys,             Size
+<7>0xF9000000,    0xF8000000,    0x02000000
+<7>--------------------------------------
+<7>On node 0 totalpages: 262144
+<7>free_area_init_node: node 0, pgdat c1344600, node_mem_map debf9000
+<7>  Normal zone: 1000 pages used for memmap
+<7>  Normal zone: 0 pages reserved
+<7>  Normal zone: 128000 pages, LIFO batch:31
+<7>  HighMem zone: 1048 pages used for memmap
+<7>  HighMem zone: 134144 pages, LIFO batch:31
+<4>DT missing boot CPU MPIDR[23:0], fall back to default cpu_logical_map
+<6>PERCPU: Embedded 10 pages/cpu @debc1000 s11648 r8192 d21120 u40960
+<7>pcpu-alloc: s11648 r8192 d21120 u40960 alloc=10*4096
+<7>pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+<4>Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 261144
+<5>Kernel command line: console=ttyAMA0,115200 blkdevparts=mmcblk0:1M(fastboot),1M(bootargs),10M(recovery),2M(deviceinfo),8M(baseparam),8M(pqparam),20M(logo),20M(logobak),40M(fastplay),40M(fastplaybak),40M(kernel),20M(misc),1M(stbid),10M(loaderdb),10M(loaderdbbak),8M(fackernel),80M(facrootbox),40M(trustedcore),8M(userapi),8M(hibdrv),8M(qbflag),300M(qbdata),50M(private),8M(securestore),100M(reserved),500M(cache),800M(system),-(userdata) androidboot.umfactory.type=none androidboot.umdebug=1 initrd=0x4000000,0x62D4F initrd=0x4000000,0x62D4F mem=1G mmz=ddr,0,0,48M
+<6>log_buf_len individual max cpu contribution: 4096 bytes
+<6>log_buf_len total cpu_extra contributions: 12288 bytes
+<6>log_buf_len min size: 16384 bytes
+<6>log_buf_len: 32768 bytes
+<6>early log buf free: 13816(84%)
+<6>PID hash table entries: 2048 (order: 1, 8192 bytes)
+<6>Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+<4>Memory: 953180K/1048576K available (13865K kernel code, 875K rwdata, 4452K rodata, 619K init, 2600K bss, 95396K reserved, 472872K highmem)
+<5>Virtual kernel memory layout:
+<5>    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+<5>    vmalloc : 0xdf800000 - 0xff000000   ( 504 MB)
+<5>    lowmem  : 0xc0000000 - 0xdf400000   ( 500 MB)
+<5>    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>      .text : 0xc0008000 - 0xc11eb8a4   (18319 kB)
+<5>      .init : 0xc11ec000 - 0xc1286d80   ( 620 kB)
+<5>      .data : 0xc1288000 - 0xc1362c8c   ( 876 kB)
+<5>       .bss : 0xc1362c8c - 0xc15ecfcc   (2601 kB)
+<6>SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+<6>Hierarchical RCU implementation.
+<6>NR_IRQS:352
+<6>Architected cp15 timer(s) running at 24.00MHz (phys).
+<6>sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 2863311519744ns
+<6>Switching to timer-based delay loop, resolution 41ns
+<6>sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956969942ns
+<6>Console: colour dummy device 80x30
+<6>Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+<6>pid_max: default: 32768 minimum: 301
+<6>Security Framework initialized
+<6>SELinux:  Initializing.
+<7>SELinux:  Starting in permissive mode
+<6>Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>Initializing cgroup subsys perf_event
+<6>CPU: Testing write buffer coherency: ok
+<6>ftrace: allocating 45445 entries in 134 pages
+<6>CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+<6>Setting up static identity map for 0xc92150 - 0xc921a8
+<4>CPU: hi3798mv200
+<7>CPU1: powerup
+<7>CPU1: Booted secondary processor
+<6>CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+<7>CPU2: powerup
+<7>CPU2: Booted secondary processor
+<6>CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+<7>CPU3: powerup
+<7>CPU3: Booted secondary processor
+<6>CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+<6>Brought up 4 CPUs
+<6>SMP: Total of 4 processors activated (192.00 BogoMIPS).
+<6>CPU: All CPU(s) started in SVC mode.
+<6>VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+<6>regulator-dummy: no parameters
+<6>NET: Registered protocol family 16
+<6>DMA: preallocated 256 KiB pool for atomic coherent allocations
+<6>hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+<6>hw-breakpoint: maximum watchpoint size is 8 bytes.
+<6>Serial: AMBA PL011 UART driver
+<6>f8b00000.uart: ttyAMA0 at MMIO 0xf8b00000 (irq = 81, base_baud = 0) is a PL011 rev2
+<6>console [ttyAMA0] enabled
+<6>f8b02000.uart: ttyAMA1 at MMIO 0xf8b02000 (irq = 83, base_baud = 0) is a PL011 rev2
+<6>f8b03000.uart: ttyAMA2 at MMIO 0xf8b03000 (irq = 84, base_baud = 0) is a PL011 rev2
+<6>pl061_gpio gpio0: PL061 GPIO chip @0xf8b20000 registered
+<6>pl061_gpio gpio1: PL061 GPIO chip @0xf8b21000 registered
+<6>pl061_gpio gpio2: PL061 GPIO chip @0xf8b22000 registered
+<6>pl061_gpio gpio3: PL061 GPIO chip @0xf8b23000 registered
+<6>pl061_gpio gpio4: PL061 GPIO chip @0xf8b24000 registered
+<6>pl061_gpio gpio5: PL061 GPIO chip @0xf8004000 registered
+<6>pl061_gpio gpio6: PL061 GPIO chip @0xf8b26000 registered
+<6>pl061_gpio gpio7: PL061 GPIO chip @0xf8b27000 registered
+<6>pl061_gpio gpio8: PL061 GPIO chip @0xf8b28000 registered
+<6>pl061_gpio gpio9: PL061 GPIO chip @0xf8b29000 registered
+<4>hisilicon-pcie: probe of f0001000.pcie failed with error -1
+<6>vgaarb: loaded
+<5>SCSI subsystem initialized
+<7>libata version 3.00 loaded.
+<6>ssp-pl022 f8b1a000.spi: ARM PL022 driver, device ID: 0x00041022
+<6>ssp-pl022 f8b1a000.spi: mapped registers from 0xf8b1a000 to f9b1a000
+<6>spi_master spi0: will run message pump with realtime priority
+<6>usbcore: registered new interface driver usbfs
+<6>usbcore: registered new interface driver hub
+<6>usbcore: registered new device driver usb
+<6>media: Linux media interface: v0.10
+<6>Linux video capture interface: v2.00
+<6>hisi_iommu_ptable_addr:phy 0x1d800000    size:0x400000
+<6>hisi_iommu_err_rdaddr :phy 0x1ddfec00    size:0x200
+<6>hisi_iommu_err_wraddr :phy 0x1ddfee00     size:0x200
+<6>in hisi_iommu_domain_init start 
+<6>in hisi_iommu_domain_init end 
+<6>Advanced Linux Sound Architecture Driver Initialized.
+<6>Bluetooth: Core ver 2.19
+<6>NET: Registered protocol family 31
+<6>Bluetooth: HCI device and connection manager initialized
+<6>Bluetooth: HCI socket layer initialized
+<6>Bluetooth: L2CAP socket layer initialized
+<6>Bluetooth: SCO socket layer initialized
+<4>[00:00:00:535 ERROR-Invalid]:MCE_Init[2352]:ERR: get PDM Param
+<6>Switched to clocksource arch_sys_counter
+<6>NET: Registered protocol family 2
+<6>TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+<6>TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+<6>TCP: Hash tables configured (established 4096 bind 4096)
+<6>TCP: reno registered
+<6>UDP hash table entries: 256 (order: 1, 8192 bytes)
+<6>UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+<6>NET: Registered protocol family 1
+<6>RPC: Registered named UNIX socket transport module.
+<6>RPC: Registered udp transport module.
+<6>RPC: Registered tcp transport module.
+<6>RPC: Registered tcp NFSv4.1 backchannel transport module.
+<7>PCI: CLS 0 bytes, default 64
+<6>Trying to unpack rootfs image as initramfs...
+<6>Freeing initrd memory: 396K (c4000000 - c4063000)
+<6>hw perfevents: enabled with armv7_cortex_a17 PMU driver, 7 counters available
+<6>CPU PMU: attempt to register multiple PMU devices!
+<4>arm-pmu: probe of arm-pmu failed with error -28
+<6>futex hash table entries: 1024 (order: 4, 65536 bytes)
+<6>audit: initializing netlink subsys (disabled)
+<5>audit: type=2000 audit(0.652:1): initialized
+<5>VFS: Disk quotas dquot_6.5.2
+<4>Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+<6>squashfs: version 4.0 (2009/01/31) Phillip Lougher
+<6>jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+<6>fuse init (API version 7.23)
+<7>yaffs: yaffs built Installing.
+<6>msgmni has been set to 938
+<7>SELinux:  Registering netfilter hooks
+<6>bounce: pool size: 64 pages
+<6>Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+<6>io scheduler noop registered
+<6>io scheduler deadline registered (default)
+<6>io scheduler cfq registered
+<6>brd: module loaded
+<6>loop: module loaded
+<6>zram: Created 1 device(s) ...
+<6>hifmc100: registerd new interface driver hifmc100.
+<5>hifmc100: Found flash memory controller hifmc100.
+<6>hifmc100: no found spi-nor device.
+<6>hifmc100: no found nand device.
+<6>tun: Universal TUN/TAP device driver, 1.6
+<6>tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>FEPHY:addr=2, la_am=0xe, ldo_am=0x4, r_tuning=0x15
+<6>libphy: himii: probed
+<6>hi_eth: attached port 0 PHY 2 to driver HiSilicon Festa v330
+<6>/soc/ethernet@f9840000/ethernet_phy@0 has invalid PHY address=255
+<6>PPP generic driver version 2.4.2
+<6>PPP BSD Compression module registered
+<6>PPP Deflate Compression module registered
+<6>PPP MPPE Compression module registered
+<6>NET: Registered protocol family 24
+<6>usbcore: registered new interface driver asix
+<6>usbcore: registered new interface driver ax88179_178a
+<6>usbcore: registered new interface driver cdc_ether
+<6>usbcore: registered new interface driver dm9601
+<6>usbcore: registered new interface driver net1080
+<6>usbcore: registered new interface driver cdc_subset
+<6>usbcore: registered new interface driver zaurus
+<6>usbcore: registered new interface driver cdc_ncm
+<6>ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>ehci-pci: EHCI PCI platform driver
+<6>ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<6>ohci-pci: OHCI PCI platform driver
+<6>usbcore: registered new interface driver cdc_wdm
+<6>usbcore: registered new interface driver usb-storage
+<6>usbcore: registered new interface driver usbserial
+<6>usbcore: registered new interface driver option
+<6>usbserial: USB Serial support registered for GSM modem (1-port)
+<6>hiudc: version 3.00a 10-AUG-2012
+<4>Core Release: 3.10a
+<4>Setting default values for core params
+<4>Using Buffer DMA mode
+<4>Dedicated Tx FIFOs mode
+<6>file system registered
+<6>mousedev: PS/2 mouse device common for all mice
+<6>i2c /dev entries driver
+<6>usbcore: registered new interface driver uvcvideo
+<6>USB Video Class driver (1.1.1)
+<6>sp805-wdt f8a2c000.watchdog: registration successful
+<6>device-mapper: ioctl: 4.28.0-ioctl (2014-09-17) initialised: dm-devel@redhat.com
+<4>registered new interface driver himciV2.0_3.18.24_hi3798mv2x_20170401
+<6>mmc0: BKOPS_EN bit is not set
+<4>scan edges:2 p2f:6 f2p:8
+<4>mix set temp-phase 3
+<4>scan elemnts: startp:136 endp:127
+<5>Tuning SampleClock. mix set phase:[03/07] ele:[12/17] 
+<6>mmc0: new HS400 MMC card at address 0001
+<6>mmcblk0: mmc0:0001 004G60 3.68 GiB 
+<6>mmcblk0boot0: mmc0:0001 004G60 partition 1 2.00 MiB
+<5>f9820000.himciv200.SD: eMMC/MMC/SD Device NOT detected!
+<6>mmcblk0boot1: mmc0:0001 004G60 partition 2 2.00 MiB
+<6>mmcblk0rpmb: mmc0:0001 004G60 partition 3 512 KiB
+<6> mmcblk0: p1(fastboot) p2(bootargs) p3(recovery) p4(deviceinfo) p5(baseparam) p6(pqparam) p7(logo) p8(logobak) p9(fastplay) p10(fastplaybak) p11(kernel) p12(misc) p13(stbid) p14(loaderdb) p15(loaderdbbak) p16(fackernel) p17(facrootbox) p18(trustedcore) p19(userapi) p20(hibdrv) p21(qbflag) p22(qbdata) p23(private) p24(securestore) p25(reserved) p26(cache) p27(system) p28(userdata)
+<5>f9c40000.himciv200.SD: eMMC/MMC/SD Device NOT detected!
+<6>hidraw: raw HID events driver (C) Jiri Kosina
+<6>usbcore: registered new interface driver usbhid
+<6>usbhid: USB HID core driver
+<6>ashmem: initialized
+<6>logger: created 256K log 'log_main'
+<6>logger: created 256K log 'log_events'
+<6>logger: created 256K log 'log_radio'
+<6>logger: created 256K log 'log_system'
+<6>hiahci-phy: registered new sata phy driver
+<6>input: Hi keyboard as /devices/virtual/input/input0
+<6>input: Hi mouse as /devices/virtual/input/input1
+<6>input: qwerty as /devices/virtual/input/input2
+<6>Hi Android vinput driver init successful!
+<6>hiotg: registered new interface otg driver
+<6>Registering sdcardfs 2.1.3
+<6>vdd-gpu: 700 <--> 1250 mV at 910 mV 
+<4>Mali: Mali device driver loaded
+<6>usbcore: registered new interface driver snd-usb-audio
+<6>oprofile: using timer interrupt.
+<6>GACT probability on
+<6>Mirror/redirect action on
+<6>Simple TC action Loaded
+<6>netem: version 1.3
+<6>u32 classifier
+<6>    Performance counters on
+<6>    input device check on
+<6>    Actions configured
+<6>Netfilter messages via NETLINK v0.30.
+<6>nf_conntrack version 0.5.0 (14899 buckets, 59596 max)
+<6>ctnetlink v0.93: registering with nfnetlink.
+<6>xt_time: kernel timezone is -0000
+<6>IPVS: Registered protocols ()
+<6>IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+<6>IPVS: Creating netns size=792 id=0
+<6>IPVS: ipvs loaded.
+<6>ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+<6>arp_tables: (C) 2002 David S. Miller
+<6>TCP: cubic registered
+<6>NET: Registered protocol family 10
+<6>ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>NET: Registered protocol family 17
+<6>bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+<5>Bridge firewalling registered
+<6>Bluetooth: RFCOMM TTY layer initialized
+<6>Bluetooth: RFCOMM socket layer initialized
+<6>Bluetooth: RFCOMM ver 1.11
+<6>Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>Bluetooth: BNEP filters: protocol multicast
+<6>Bluetooth: BNEP socket layer initialized
+<6>Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>Bluetooth: HIDP socket layer initialized
+<6>8021q: 802.1Q VLAN Support v1.8
+<6>lib80211: common routines for IEEE802.11 drivers
+<7>lib80211_crypt: registered algorithm 'NULL'
+<7>lib80211_crypt: registered algorithm 'WEP'
+<7>lib80211_crypt: registered algorithm 'CCMP'
+<7>lib80211_crypt: registered algorithm 'TKIP'
+<5>Registering SWP/SWPB emulation handler
+<6>hisi-sndcard hisi-sndcard: aiao-hifi <-> hisi-i2s mapping ok
+<4><0>KEYLED_DRV_ModInit.1126 select umgpio2 keyled
+<6>ALSA device list:
+<6>  #0: HISI-AIAO
+<6>Freeing unused kernel memory: 616K (c11ec000 - c1286000)
+<11>init: /init.bigfish.rc: 40: invalid command 'getprop'
+<11>init: /init.bigfish.rc: 93: invalid option 'sdcard_r'
+<11>init: /init.unionman.rc: 81: invalid service name 'systvosavsettings'
+<4>init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<11>init: /dev/hw_random not found
+<11>init: cannot open '/initlogo.rle'
+<11>init: call um_checkout_bootcommand
+<11>init: open read MISC temp = 
+<11>init: strtok command = (null)
+<11>init: call um_bootcommand needformat = 0 targetpartion = 
+<6>EXT4-fs (mmcblk0p27): mounted filesystem with ordered data mode. Opts: (null)
+<6>EXT4-fs (mmcblk0p28): mounted filesystem with ordered data mode. Opts: (null)
+<6>EXT4-fs (mmcblk0p26): mounted filesystem with ordered data mode. Opts: (null)
+<6>EXT4-fs (mmcblk0p23): mounted filesystem with ordered data mode. Opts: (null)
+<6>EXT4-fs (mmcblk0p24): mounted filesystem with ordered data mode. Opts: (null)
+<11>init: call um_upgrade_recovery needupgraderecovery = 0 upgradefile = 
+<11>init: /dev/hw_random not found
+<11>healthd: wakealarm_init: timerfd_create failed
+<11>init: cannot find '/system/bin/rild', disabling 'ril-daemon'
+<11>init: cannot find '/system/bin/dbus-daemon', disabling 'dbus'
+<11>init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<11>init: cannot find '/system/bin/teecd', disabling 'teecd'
+<11>init: cannot find '/system/bin/frontPanel', disabling 'frontPanel'
+<11>init: cannot find '/system/bin/dtvserver', disabling 'dtvserver'
+<11>init: cannot find '/system/bin/usb-driver', disabling 'usb-driver'
+<5>random: installd urandom read with 13 bits of entropy available
+<11>healthd: No charger supplies found
+<6>sdcardfs: version 2.1.3
+<6>sdcardfs: dev_name -> /data/media
+<6>sdcardfs: options -> fsuid=1023,fsgid=1023,mask=0,userid=0,gid=1015,derive=legacy,reserved_mb=20
+<6>sdcardfs: mounted on top of /data/media type ext4
+<11>init: property 'sys.powerctl' doesn't exist while expanding '${sys.powerctl}'
+<11>init: powerctl: cannot expand '${sys.powerctl}'
+<11>init: property 'sys.sysctl.extra_free_kbytes' doesn't exist while expanding '${sys.sysctl.extra_free_kbytes}'
+<11>init: cannot expand '${sys.sysctl.extra_free_kbytes}' while writing to '/proc/sys/vm/extra_free_kbytes'
+<6>read descriptors
+<6>read strings
+<6>g_ffs gadget: g_ffs ready
+<12>healthd: BatteryStatusPath not found
+<12>healthd: BatteryHealthPath not found
+<12>healthd: BatteryPresentPath not found
+<12>healthd: BatteryCapacityPath not found
+<12>healthd: BatteryVoltagePath not found
+<12>healthd: BatteryTemperaturePath not found
+<12>healthd: BatteryTechnologyPath not found
+<4>[00:00:02:223 ERROR-HI_CIPHER]:HI_DRV_CIPHER_LoadHdcpKey[167]:Invalid head of B1~B3!
+<4>[14:39:52:322 ERROR-HI_HDMI]:DRV_HDMI_KeyLoad[4119]:Load hdcp key error!
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+<11>init: sys_prop: permission denied uid:1002  name:persist.bt.fwdump
+<12>
+<12>
+<12>Welcome to HiAndroid
+<12>
+<12>
+<6>ehci-platform: EHCI generic platform driver
+<6>ehci-platform f9890000.ehci: EHCI Host Controller
+<6>ehci-platform f9890000.ehci: new USB bus registered, assigned bus number 1
+<6>ehci-platform f9890000.ehci: irq 98, io mem 0xf9890000
+<6>ehci-platform f9890000.ehci: USB 2.0 started, EHCI 1.00
+<6>hub 1-0:1.0: USB hub found
+<6>hub 1-0:1.0: 2 ports detected
+<6>ohci-platform: OHCI generic platform driver
+<6>ohci-platform f9880000.ohci: Generic Platform OHCI controller
+<6>ohci-platform f9880000.ohci: new USB bus registered, assigned bus number 2
+<6>ohci-platform f9880000.ohci: irq 99, io mem 0xf9880000
+<6>hub 2-0:1.0: USB hub found
+<6>hub 2-0:1.0: 2 ports detected
+<6>xhci-hcd f98a0000.xhci: xHCI Host Controller
+<6>xhci-hcd f98a0000.xhci: new USB bus registered, assigned bus number 3
+<6>xhci-hcd f98a0000.xhci: irq 101, io mem 0xf98a0000
+<6>hub 3-0:1.0: USB hub found
+<6>hub 3-0:1.0: 1 port detected
+<6>xhci-hcd f98a0000.xhci: xHCI Host Controller
+<6>xhci-hcd f98a0000.xhci: new USB bus registered, assigned bus number 4
+<6>hub 4-0:1.0: USB hub found
+<6>hub 4-0:1.0: 1 port detected
+<4>tntfs: module license 'Commercial. For support email ntfs-support@tuxera.com.' taints kernel.
+<4>Disabling lock debugging due to kernel taint
+<6>Tuxera NTFS driver 3017.7.4.6 [Flags: R/W MODULE].
+<6>Built against headers 3.18.24_hi3798mv2x #1 SMP Mon Dec 11 18:33:22 CST 2017 arm
+<6>Running on kernel 3.18.24_hi3798mv2x #10 SMP Thu Aug 2 21:48:40 AKDT 2018 armv7l
+<11>init: sys_prop: permission denied uid:1000  name:ro.config.gfx2d_compose
+<6>rtk_btusb: RTKBT_RELEASE_NAME: 20170908_TV_ANDROID_4.4(Beta)
+<6>rtk_btusb: Realtek Bluetooth USB driver module init, version 4.1.5
+<6>rtk_btusb: Register usb char device interface for BT driver
+<6>usbcore: registered new interface driver rtk_btusb
+<4>[btmtk_info] btmtk_usb_init: btmtk usb driver ver 6.0.16101902
+<4>[btmtk_info] btmtk_usb_BT_init: begin
+<4>[btmtk_err] btmtk_usb_BT_init: devID 116391936, devIDfwlog 117440513
+<4>[btmtk_info] btmtk_usb_set_state: UNKNOWN(0) -> INIT(1)
+<4>[btmtk_info] btmtk_usb_BT_init: major number: 111
+<4>[btmtk_info] btmtk_usb_BT_init: BT_majorfwlog number: 112
+<4>[btmtk_info] btmtk_usb_BT_init: BT_chrdev driver(major 111) installed.
+<4>[btmtk_info] btmtk_usb_BT_init: BT_chrdevfwlog driver(major 112) installed.
+<4>[btmtk_err] btmtk_usb_BT_init: BT_major 111, BT_majorfwlog 112
+<4>[btmtk_err] btmtk_usb_BT_init: devID 116391936, devIDfwlog 117440513
+<4>[btmtk_info] btmtk_fops_set_state: UNKNOWN(0) -> INIT(1)
+<4>[btmtk_warn] btmtk_usb_BT_init: No Exported Func Found [RegisterPdwncCallback], just skip!
+<4>[btmtk_warn] btmtk_usb_BT_init: No Exported Func Found [RegisterLateResumeNotification], just skip!
+<4>[btmtk_info] btmtk_usb_allocate_memory: Success
+<4>[btmtk_info] btmtk_usb_set_state: INIT(1) -> DISCONNECT(2)
+<4>[btmtk_info] btmtk_usb_BT_init: end
+<6>usbcore: registered new interface driver btmtk_usb
+<4>[14:39:53:262 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<6>hieth f9c30000.hieth eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+<6>IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+<4>[14:39:55:270 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:39:57:278 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:39:59:286 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<5>random: nonblocking pool is initialized
+<4>[14:40:01:294 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:40:03:302 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<6>lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+<6>lowmemorykiller: oom_adj 0 => oom_score_adj 0
+<6>lowmemorykiller: oom_adj 1 => oom_score_adj 58
+<6>lowmemorykiller: oom_adj 2 => oom_score_adj 117
+<6>lowmemorykiller: oom_adj 3 => oom_score_adj 176
+<6>lowmemorykiller: oom_adj 9 => oom_score_adj 529
+<6>lowmemorykiller: oom_adj 15 => oom_score_adj 1000
+<6>capability: warning: `dhcpcd' uses 32-bit capabilities (legacy support in use)
+<11>init: cannot find '/system/etc/vlan/vlan.start', disabling 'vlan_start'
+<4>[14:40:05:310 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:40:07:318 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:40:09:326 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:40:10:636 FATAL-HI_OTP]:HAL_OTP_V200_ReadFromBuffer[266]:addr 0x00010000 large than otp size 0x00000800
+<11>init: untracked pid 1167 exited
+<4>[14:40:11:334 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<4>[14:40:13:341 ERROR-HI_GPIO]:HI_DRV_GPIO_WriteBit[335]:Input direction, write denied
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>nf_conntrack: automatic helper assignment is deprecated and it will be removed soon. Use the iptables CT target to attach helpers instead.
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
+<6>SMI_RAC_TDAT16M (1610): drop_caches: 3
